@@ -4,7 +4,6 @@ import BookCard from "./BookCard";
 import AddBookCard from "./AddBookCard";
 type BookShelfProps = {
     books: Book[];
-    addBook: (newTitle:string, newAuthor:string, newIsbn:string)=>void;
     deleteBook:(isbn:string)=>void;
 }
 

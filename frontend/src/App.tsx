@@ -39,10 +39,13 @@ function App() {
       <header className="App-header">
           <h1>Book Library</h1>
           <div>
-              <BookOverview books={books} addBook={addBook} deleteBook={deleteBook}/>
+              <AddBookCard addBook={addBook}/>
           </div>
-
+          <div>
+              <BookOverview books={books} deleteBook={deleteBook}/>
+          </div>
       </header>
+
     </div>
   );
 }

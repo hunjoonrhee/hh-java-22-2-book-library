@@ -4,8 +4,7 @@ import AddBookCard from "./AddBookCard";
 import "./BookOverview.css"
 
 type BookOverviewProps = {
-    books: Book[];
-    addBook: (newTitle: string, newAuthor: string, newIsbn: string) => void;
+    books: Book[]
     deleteBook:(isbn:string)=>void;
 }
 
@@ -14,11 +13,9 @@ export default function BookOverview(props: BookOverviewProps){
     return(
         <div className={"book-overview"}>
             <div>
-                <BookShelf books={props.books} addBook={props.addBook} deleteBook={props.deleteBook}/>
+                <BookShelf books={props.books} deleteBook={props.deleteBook}/>
             </div>
-            <div>
-                <AddBookCard addBook={props.addBook}/>
-            </div>
+
         </div>
 
 
